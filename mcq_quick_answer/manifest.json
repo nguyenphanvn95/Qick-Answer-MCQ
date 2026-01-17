@@ -1,0 +1,11 @@
+{
+    "name": "MCQ Quick Answer",
+    "package": "mcq_quick_answer",
+    "author": "MCQ Team",
+    "version": "1.0.0",
+    "description": "Trả lời nhanh câu hỏi MCQ bằng phím số 1-5. Chỉ hoạt động với thẻ có trường Quiz. Có thể bật/tắt và hiển thị tip hướng dẫn.",
+    "homepage": "",
+    "min_point_version": 45,
+    "max_point_version": 0,
+    "conflicts": []
+}
