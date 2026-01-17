@@ -1,5 +1,5 @@
 """
-MCQ Quick Answer - Trả lời nhanh MCQ bằng phím số 1-5
+MCQ Quick Answer - Trả lời nhanh MCQ bằng phím số 1-4
 """
 
 from aqt import mw, gui_hooks
@@ -34,12 +34,12 @@ class ConfigDialog(QDialog):
         layout.addWidget(title)
         
         # Checkbox bật/tắt tính năng
-        self.enabled_checkbox = QCheckBox("Bật tính năng trả lời nhanh bằng phím số 1-5")
+        self.enabled_checkbox = QCheckBox("Bật tính năng trả lời nhanh bằng phím số 1-4")
         self.enabled_checkbox.setStyleSheet("font-size: 14px; padding: 5px;")
         layout.addWidget(self.enabled_checkbox)
         
         # Mô tả
-        desc1 = QLabel("Khi bật: Nhấn phím 1-5 sẽ chọn đáp án MCQ thay vì đánh giá thẻ")
+        desc1 = QLabel("Khi bật: Nhấn phím 1-4 sẽ chọn đáp án MCQ thay vì đánh giá thẻ")
         desc1.setStyleSheet("color: gray; padding-left: 25px;")
         layout.addWidget(desc1)
         
@@ -173,7 +173,7 @@ def inject_tip_on_show_question(card):
         // Tạo tip element
         var tip = document.createElement('div');
         tip.id = 'mcq-quick-answer-tip';
-        tip.innerHTML = '💡 <strong>Mẹo:</strong> Dùng phím <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> <kbd>5</kbd> để trả lời nhanh';
+        tip.innerHTML = '💡 <strong>Mẹo:</strong> Dùng phím <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> </kbd> để trả lời nhanh';
         tip.style.cssText = `
             position: fixed;
             bottom: 20px;
@@ -228,7 +228,7 @@ def inject_tip_on_show_question(card):
             }, 300);
         }, 5000);
         
-        console.log('MCQ Quick Answer: Đã hiển thị tip');
+        console.log('MCQ Quick Answer: Đã hiển thị Tip');
     })();
     """
     
@@ -247,14 +247,14 @@ def show_about():
     
     <h3>Tính năng:</h3>
     <ul>
-        <li>✅ Trả lời nhanh MCQ bằng phím số 1-5</li>
+        <li>✅ Trả lời nhanh MCQ bằng phím số 1-4</li>
         <li>✅ Chỉ hoạt động với thẻ có trường Quiz</li>
         <li>✅ Bật/tắt tính năng dễ dàng</li>
         <li>✅ Hiển thị tip hướng dẫn</li>
     </ul>
     
     <h3>Cách dùng:</h3>
-    <p>Khi học thẻ MCQ, nhấn phím <strong>1, 2, 3, 4, 5</strong> để chọn đáp án tương ứng.</p>
+    <p>Khi học thẻ MCQ, nhấn phím <strong>1, 2, 3, 4</strong> để chọn đáp án tương ứng.</p>
     
     <h3>Cài đặt:</h3>
     <p>Vào <strong>Tools → MCQ Quick Answer → Cài đặt</strong> để bật/tắt tính năng.</p>

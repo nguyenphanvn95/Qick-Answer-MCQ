@@ -1,1 +1,1 @@
-{"conflicts": [], "max_point_version": 0, "homepage": "", "name": "MCQ Quick Answer", "min_point_version": 45, "disabled": false}
+{"conflicts": [], "max_point_version": 0, "homepage": "", "name": "MCQ Quick Answer", "min_point_version": 45, "disabled": false, "config": {"enabled": true, "show_tip": true}}
